@@ -1,0 +1,126 @@
+<div class="navbar" >
+    <div class="flex-container">
+        <div (click)="open(content)" style="cursor: pointer;"><i class="bi bi-list"></i></div>
+        <div> 
+            <div class="flex-container0">
+            <div style="cursor: pointer;" (click)="navigate()">Home</div>
+            <div style="cursor: pointer;" (click)="navigate1()">About</div>
+            <div placement="bottom" ngbTooltip="Mail: {{ email }} Phone: {{ phone }}
+			" tooltipClass="my-custom-class" style="cursor: pointer;">Contact</div>  
+			
+          </div>
+        </div>
+        <div ngbTooltip="Haryshwa
+		" tooltipClass="my-custom-class" style="cursor: pointer;"><i class="bi bi-person-circle"></i></div>  
+      </div>
+</div>
+<ng-template #content let-offcanvas >
+	<div class="offcanvas-header" style="width:100vh;">
+		<h4 class="offcanvas-title" id="offcanvas-basic-title">Food</h4>
+		<i style="cursor: pointer;" class="bi bi-x-circle" (click)="offcanvas.dismiss('Cross click')"></i>
+		
+	</div>
+	<div class="offcanvas-body" style="width:100vh">
+		<form>
+			<div class="mb-3"><div ngbAccordion #accordion="ngbAccordion">
+				<div ngbAccordionItem="first" style="background-color:black; color:white; ">
+					<h2 ngbAccordionHeader >
+						<button ngbAccordionButton style="background-color:black; color:white;justify-content: center;" (click)="click()">Indian
+							<i *ngIf="val" class="bi bi-chevron-down" style="margin-left: 10px;" ></i>
+							<i *ngIf="val1" class="bi bi-chevron-up" style="margin-left: 10px;" ></i>
+						</button>
+					</h2>
+					
+					<div ngbAccordionCollapse>
+						<div ngbAccordionBody>
+							<ng-template>
+								<ul class="whisky-list">
+									<li class="whisky-item">Chicken Biriyani</li>
+									<li class="whisky-item">Mutton Biriyani</li>
+									<li class="whisky-item">Parotta with Gravy</li>
+									<li class="whisky-item">Naan with Masala</li>
+									<li class="whisky-item">Malai Kofta</li>
+									<li class="whisky-item">Karaikudi Curry</li>
+								  </ul>
+							</ng-template>
+						</div>
+					</div>
+				</div>
+				<div ngbAccordionItem="second" style="background-color: black;color:white">
+					<h2 ngbAccordionHeader >
+						<button ngbAccordionButton style="background-color: black;color:white;justify-content: center;" (click)="click1()">Chinese
+							<i *ngIf="val0" class="bi bi-chevron-down" style="margin-left: 10px;" ></i>
+							<i *ngIf="val01" class="bi bi-chevron-up" style="margin-left: 10px;" ></i>
+						</button>
+					</h2>
+					<div ngbAccordionCollapse>
+						<div ngbAccordionBody>
+							<ng-template>
+								<ul class="whisky-list">
+									<li class="whisky-item">Kung Pao Chicken</li>
+									<li class="whisky-item">Peking Roast Duck</li>
+									<li class="whisky-item">Sweet and Sour Pork</li>
+									<li class="whisky-item">Spring Rolls</li>
+									<li class="whisky-item">Chinese Hot Pot</li>
+									<li class="whisky-item">Wonton Soup</li>
+								  </ul>
+							</ng-template>
+						</div>
+					</div>
+				</div>
+				<div ngbAccordionItem="third" style="background-color: black;color:white">
+					<h2 ngbAccordionHeader >
+						<button ngbAccordionButton style="background-color: black;color:white;justify-content: center;" (click)="click2()">Italian
+							<i *ngIf="val9" class="bi bi-chevron-down" style="margin-left: 10px;" ></i>
+							<i *ngIf="val91" class="bi bi-chevron-up" style="margin-left: 10px;" ></i>
+						</button>
+					</h2>
+					<div ngbAccordionCollapse>
+						<div ngbAccordionBody>
+							<ng-template>
+								<ul class="whisky-list">
+									<li class="whisky-item">Chicken Pizza</li>
+									<li class="whisky-item">Tomato Pasta</li>
+									<li class="whisky-item">Risotto Alla Milanese</li>
+									<li class="whisky-item">Spaghetti Alla Carbonara</li>
+									<li class="whisky-item">Arancini</li>
+									<li class="whisky-item">Lasagna</li>
+								  </ul>
+							</ng-template>
+						</div>
+					</div>
+				</div>
+				<div ngbAccordionItem="forth"style="background-color: black;color:white">
+					<h2 ngbAccordionHeader >
+						<button ngbAccordionButton style="background-color: black;color:white;justify-content: center;" (click)="click3()">American
+							<i *ngIf="val8" class="bi bi-chevron-down" style="margin-left: 10px;" ></i>
+							<i *ngIf="val81" class="bi bi-chevron-up" style="margin-left: 10px;" ></i>
+						</button>
+					</h2>
+					<div ngbAccordionCollapse>
+						<div ngbAccordionBody>
+							<ng-template>
+								<ul class="whisky-list">
+									<li class="whisky-item">Hamburger</li>
+									<li class="whisky-item">Pot roast</li>
+									<li class="whisky-item">Apple Pie</li>
+									<li class="whisky-item">Biscuits and Gravy</li>
+									<li class="whisky-item">Nashville Hot Chicken</li>
+									<li class="whisky-item">Club sandwich</li>
+								  </ul>
+							</ng-template>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+			
+		</form>
+		<div class="text-end">
+		
+		</div>
+	</div>
+</ng-template>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo offcanvas</button> -->

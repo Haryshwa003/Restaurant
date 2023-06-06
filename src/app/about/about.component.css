@@ -1,0 +1,32 @@
+.flex-containerabout {
+ 
+    background-color: DodgerBlue;
+  }
+  
+  .flex-containerabout > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 42px;
+  }
+  .about-section::-webkit-scrollbar {
+    width: 0px;
+}
+
+.about-section::-webkit-scrollbar-thumb {
+    background-color: #ffffffad;
+    border-radius: 0px;
+}
+
+.about-section::-webkit-scrollbar-track {
+    background-color: #000000ad;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}

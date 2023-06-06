@@ -1,0 +1,127 @@
+.main{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0%;
+    overflow: scroll;
+}
+.main::-webkit-scrollbar {
+    width: 0.0em;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+.flex-container {
+    flex-wrap: nowrap;
+   
+  }
+  
+  .flex-container > div {
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+        justify-content: space-between;
+        max-height: 703px;
+    overflow: hidden;
+  }
+  
+  .flex-container1 > div {
+    width:49%;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .flex-containerfood {
+    display: flex;
+    flex-wrap: nowrap;
+ 
+        justify-content: space-evenly;
+  }
+  
+  .flex-containerfood > div {
+    width: 100%;
+    /* background-color: aliceblue; */
+    margin: 14px;
+   background-color: #ff575754;
+    line-height: 55px;
+    font-size: 30px;
+    
+  }
+  @keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+  
+}
+@keyframes slideIn1 {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+    
+  }
+
+/* Apply the animation to the element you want to animate */
+.element-to-animate {
+  animation: slideIn 1s ease-in-out;
+}
+.element-to-animate1 {
+    animation: slideIn1 1s ease-in-out;
+  }
+  .flex-containeritaly {
+    display: flex;
+    flex-wrap: nowrap;
+  
+  }
+  
+  .flex-containeritaly > div {
+    background-color:#ff575754;
+    width: 100%;
+    margin: 10px;
+    text-align: justify;
+    line-height: 75px;
+    font-size: 30px;
+    height:600px;
+    text-align: inherit;
+  }
+  @keyframes slideDown2 {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .element-to-animate2{
+    animation: slideDown2 1s ease-in-out;
+  }
+  .hover-img {
+    transition: transform 0.3s ease; /* Add a smooth transition */
+
+  }
+
+  .hover-img:hover {
+    transform: scale(1.2); /* Example: Scale up the image on hover */
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }

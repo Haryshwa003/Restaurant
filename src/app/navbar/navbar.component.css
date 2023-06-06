@@ -1,0 +1,98 @@
+.navbar{
+    width:100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    left: 0%;
+    top:0%;
+    padding:1%
+}
+.flex-container {
+    display: contents;
+  }
+  
+  .flex-container > div {
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .flex-container0 {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  .flex-container0 > div {
+    width: 50px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  .offcanvas-header{
+    background-color: black !important;
+    color:white;
+   
+  }
+  .offcanvas-body{
+    background-color: black !important;
+    color:white;
+    
+  }
+  .accordion-button::after {
+    display: none;
+  }
+  .whisky-list {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .whisky-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+    justify-content: center;
+  }
+  
+  .whisky-item:hover {
+    color: #d14040;
+  }
+  .my-custom-class .tooltip-inner {
+    background-color: #9a2626;
+    font-size: 125%;
+    color:#ebebeb;
+    max-width: 350px;
+text-align: left;
+  }
+  .my-custom-class.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color:#9a2626;
+   
+  }
+  .my-custom-class.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #9a2626;
+   
+  }
+  .my-custom-class.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color:#9a2626;
+   
+  }
+  .my-custom-class.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color:#9a2626;
+   
+  }
+  
+
+  .offcanvas-body::-webkit-scrollbar {
+    width: 0px; /* Adjust the width as per your preference */
+  }
+  
+  .offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scroll thumb */
+    border-radius: 0px; /* Adjust the border radius as per your preference */
+  }
+  
+  .offcanvas-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scroll track */
+    border-radius: 0px; /* Adjust the border radius as per your preference */
+  }
+  
